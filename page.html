@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Workplan of a Project</title>
+</head>
+
+<body>
+	<div id="workplan-form">
+		<div class='fieldset'>
+	    <legend>Project's Workplan</legend>
+
+	    	<!-- Form -->
+			<form id="wpform" action="#" method="post" data-validate="parsley">
+				<div class='row'>
+					<label for='title'>Title of the project:</label>
+					<input type="text" placeholder="Project's title" name="title" id="title" required>
+				</div>
+				<div class='row'>
+					<label for='prid'>Unique ID of the project:</label>
+					<input type="text" placeholder="Project's ID" name="id" id="prid" required>
+				</div>
+				<div class='row'>
+					<label for="duration">Duration of the project (in months):</label>
+					<input type="number" placeholder="Project's duration" name="duration" id="duration" min="1" required>
+				</div>
+				<div class='row'>
+					<label for="workpackages">Number of work packages:</label>
+					<input type="number" placeholder="Work packages" name="workpackages" id="workpackages" min="1" required>
+				</div>
+
+				<!-- Container for dynamically created input fields -->
+				<div id="fieldsContainer"></div>
+
+				<input type="submit" value="Submit">
+			</form>
+
+		</div>
+	</div>
+
+	<!-- Update Workplan Button -->
+	<a href="#" id="update">Update Workplan</a>
+
+	<!-- Popup window for entering Project's ID -->
+	<div id="popup">
+		<div class="popupContent">
+			<label for="retrieveId">Enter Project's ID:</label>
+	    	<input type="text" placeholder="Project's ID" id="retrieveId" required>
+	    	<button id="ok">OK</button>
+	    	<button id="cancel">Cancel</button>
+		</div>
+	</div>
+
+	<script src="js/form_creation.js"></script>
+	<script src="js/form_submission.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/main_script.js"></script>
+
+</body>
+</html>

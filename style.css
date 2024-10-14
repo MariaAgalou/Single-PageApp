@@ -1,0 +1,116 @@
+body {
+  background: #b4b4b4;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+}
+
+#workplan-form {
+  width: 400px;
+  min-width: 250px;
+  margin: 20px auto;
+  position: relative;
+  text-align: left;
+}
+
+#workplan-form .fieldset {
+  background-color: #d5d5d5;
+  border-radius: 3px;
+}
+
+a {
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#workplan-form legend {
+  text-align: center;
+  background: #364351;
+  width: 100%;
+  padding: 30px 0;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  font-size: 2em;
+}
+
+.fieldset form{
+  border: 1px solid #2f2f2f;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-radius: 0 0 3px 3px;
+}
+
+.placeholder #workplan-form label {
+  display: none;
+}
+
+#workplan-form input[type=text],
+#workplan-form input[type=number] {
+  padding: 15px 20px;
+  border-radius: 1px;
+  margin: 5px auto;
+  background-color: #f7f7f7;
+  border: 1px solid silver;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, .8);
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color .5s ease;
+}
+
+#workplan-form input[type=submit] {
+  width: 100%;
+  background-color: #5C8CA7;
+  padding: 10px;
+  color: white;
+  border: 1px solid #3498db;
+  border-radius: 3px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#workplan-form input[type=submit]:hover {
+  background-color: #2980b9;
+}
+
+#workplan-form input[type=submit]:active {
+  background:#5C8CA7;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popupContent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+#popup button {
+  gap: 10px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#popup button:hover {
+  background-color: #979185;
+}
+
